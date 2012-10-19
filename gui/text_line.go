@@ -72,7 +72,7 @@ func drawText(font *truetype.Font, c *freetype.Context, color color.Color, rgba 
   // TODO: wtf - this is all wrong!
   // fix fonts - we can't change the font size easily
   height := 1.3
-  pt := freetype.Pt(0, int(float64(c.FUnitToPixelRU(font.UnitsPerEm()))*height))
+  pt := freetype.Pt(0, int(float64(c.PointToFix32(float64(font.FUnitsPerEm())))*height))
   adv, _ := c.DrawString(text, pt)
   pt.X += adv.X
   py := int(float64(pt.Y>>8)/height + 0.01)

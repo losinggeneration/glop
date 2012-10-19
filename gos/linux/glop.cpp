@@ -6,6 +6,7 @@
 #include <cstdio>
 #include <stdio.h>
 #include <sys/time.h>
+#include <unistd.h>
 
 #include <X11/Xlib.h>
 #include <GL/glx.h>

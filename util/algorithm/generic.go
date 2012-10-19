@@ -7,10 +7,10 @@ import (
 
 type Chooser func(interface{}) bool
 
-// //  Given a pointer to a slice and a Chooser,  type as the input
-// // slice that contains only those elements of the input slice for which
-// // choose() returns true.  The elements of the returned slice will be in the
-// // same order that they were in in the input slice.
+// Given a pointer to a slice and a Chooser,  type as the input
+// slice that contains only those elements of the input slice for which
+// choose() returns true.  The elements of the returned slice will be in the
+// same order that they were in in the input slice.
 func Choose(_a interface{}, chooser interface{}) {
   a := reflect.ValueOf(_a)
   if a.Kind() != reflect.Ptr || a.Elem().Kind() != reflect.Slice {
