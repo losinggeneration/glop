@@ -228,8 +228,14 @@ void GlopThink() {
 				if(SynthButton(event.button.button, false, event, &ev))
 					events.push_back(ev);
 				break;
+			case SDL_ACTIVEEVENT:
+				// TODO Shouldn't we pause the game and/or stop rendering on hidden?
+				break;
 			case SDL_QUIT:
+				// TODO Fix this
+				// this really isn't what we want to do.
 				glopShutDown();
+				// Really, we should signal that we have a quit event so the program can deal with it.
 				exit(0);
 				break;
 		}
