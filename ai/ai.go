@@ -2,8 +2,8 @@ package ai
 
 import (
   "fmt"
-  "github.com/runningwild/yedparse"
-  "github.com/runningwild/polish"
+  "github.com/MobRulesGames/yedparse"
+  "github.com/MobRulesGames/polish"
   "math/rand"
 )
 

@@ -5,11 +5,11 @@ import (
   "encoding/gob"
   "errors"
   "fmt"
-  "github.com/runningwild/glop/render"
-  "github.com/runningwild/glop/util/algorithm"
-  "github.com/runningwild/opengl/gl"
-  "github.com/runningwild/opengl/glu"
-  "github.com/runningwild/yedparse"
+  "github.com/MobRulesGames/glop/render"
+  "github.com/MobRulesGames/glop/util/algorithm"
+  "github.com/MobRulesGames/opengl/gl"
+  "github.com/MobRulesGames/opengl/glu"
+  "github.com/MobRulesGames/yedparse"
   "math/rand"
   "os"
   "path/filepath"
@@ -848,7 +848,7 @@ func (s *Sprite) Think(dt int64) {
           s.waiters[i].states = nil
         }
       }
-      algorithm.Choose2(&s.waiters, func(w *waiter) bool {
+      algorithm.Choose(&s.waiters, func(w *waiter) bool {
         return w.states != nil
       })
     }

@@ -3,7 +3,7 @@ package algorithm_test
 import (
   . "github.com/orfjackal/gospec/src/gospec"
   "github.com/orfjackal/gospec/src/gospec"
-  "github.com/runningwild/glop/util/algorithm"
+  "github.com/MobRulesGames/glop/util/algorithm"
 )
 
 type board [][]int

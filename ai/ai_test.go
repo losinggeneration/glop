@@ -3,9 +3,9 @@ package ai_test
 import (
   . "github.com/orfjackal/gospec/src/gospec"
   "github.com/orfjackal/gospec/src/gospec"
-  "github.com/runningwild/yedparse"
-  "github.com/runningwild/polish"
-  "github.com/runningwild/glop/ai"
+  "github.com/MobRulesGames/yedparse"
+  "github.com/MobRulesGames/polish"
+  "github.com/MobRulesGames/glop/ai"
 )
 
 func AiSpec(c gospec.Context) {
