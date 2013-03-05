@@ -5,8 +5,8 @@ package gos
 import "C"
 
 import (
-	"../gin"
-	"../system"
+	"github.com/runningwild/glop/gin"
+	"github.com/runningwild/glop/system"
 	"unsafe"
 )
 

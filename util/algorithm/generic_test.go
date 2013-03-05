@@ -3,7 +3,7 @@ package algorithm_test
 import (
 	. "github.com/orfjackal/gospec/src/gospec"
 	"github.com/orfjackal/gospec/src/gospec"
-	"../../util/algorithm"
+	"github.com/runningwild/glop/util/algorithm"
 )
 
 /*

@@ -1,7 +1,7 @@
 package gui
 
 import (
-	"../gin"
+	"github.com/runningwild/glop/gin"
 	"math"
 )
 
