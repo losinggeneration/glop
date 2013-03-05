@@ -2,7 +2,7 @@ package sprite
 
 import (
 	"fmt"
-	"github.com/runningwild/glop/util/algorithm"
+	"../util/algorithm"
 	"github.com/runningwild/yedparse"
 	"image"
 	_ "image/png"

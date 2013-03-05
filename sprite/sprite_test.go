@@ -3,7 +3,7 @@ package sprite_test
 import (
 	. "github.com/orfjackal/gospec/src/gospec"
 	"github.com/orfjackal/gospec/src/gospec"
-	"github.com/runningwild/glop/sprite"
+	"../sprite"
 )
 
 func LoadSpriteSpec(c gospec.Context) {

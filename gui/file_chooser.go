@@ -2,7 +2,7 @@ package gui
 
 import (
 	"fmt"
-	"github.com/runningwild/glop/gin"
+	"../gin"
 	"os"
 	"path/filepath"
 	"strings"

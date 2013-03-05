@@ -3,7 +3,7 @@ package ai_test
 import (
 	. "github.com/orfjackal/gospec/src/gospec"
 	"github.com/orfjackal/gospec/src/gospec"
-	"github.com/runningwild/glop/ai"
+	"../ai"
 	"github.com/runningwild/polish"
 	"github.com/runningwild/yedparse"
 )

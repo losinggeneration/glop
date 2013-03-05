@@ -2,7 +2,7 @@ package gui
 
 import (
 	"code.google.com/p/freetype-go/freetype"
-	"github.com/runningwild/glop/gin"
+	"../gin"
 	"github.com/runningwild/opengl/gl"
 )
 

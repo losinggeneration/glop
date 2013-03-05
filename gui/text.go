@@ -6,7 +6,7 @@ import (
 	"code.google.com/p/freetype-go/freetype/truetype"
 	"encoding/gob"
 	"fmt"
-	"github.com/runningwild/glop/render"
+	"../render"
 	"image"
 	"image/color"
 	"image/draw"

@@ -1,7 +1,7 @@
 package gui
 
 import (
-	"github.com/runningwild/glop/gin"
+	"../gin"
 	"github.com/runningwild/opengl/gl"
 )
 

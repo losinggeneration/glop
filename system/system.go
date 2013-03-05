@@ -1,7 +1,7 @@
 package system
 
 import (
-	"github.com/runningwild/glop/gin"
+	"../gin"
 )
 
 type System interface {

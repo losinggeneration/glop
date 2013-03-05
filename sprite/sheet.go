@@ -3,7 +3,7 @@ package sprite
 import (
 	"encoding/binary"
 	"fmt"
-	"github.com/runningwild/glop/render"
+	"../render"
 	"github.com/runningwild/memory"
 	"github.com/runningwild/opengl/gl"
 	"github.com/runningwild/opengl/glu"
