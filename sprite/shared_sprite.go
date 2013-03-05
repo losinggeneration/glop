@@ -2,8 +2,8 @@ package sprite
 
 import (
 	"fmt"
-	"github.com/runningwild/glop/util/algorithm"
-	"github.com/runningwild/yedparse"
+	"github.com/MobRulesGames/glop/util/algorithm"
+	"github.com/MobRulesGames/yedparse"
 	"image"
 	_ "image/png"
 	"os"

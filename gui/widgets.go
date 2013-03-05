@@ -1,8 +1,8 @@
 package gui
 
 import (
-	"github.com/runningwild/opengl/gl"
-	"github.com/runningwild/opengl/glu"
+	"github.com/MobRulesGames/opengl/gl"
+	"github.com/MobRulesGames/opengl/glu"
 	"image"
 	_ "image/jpeg"
 	_ "image/png"

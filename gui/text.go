@@ -6,7 +6,7 @@ import (
 	"code.google.com/p/freetype-go/freetype/truetype"
 	"encoding/gob"
 	"fmt"
-	"github.com/runningwild/glop/render"
+	"github.com/MobRulesGames/glop/render"
 	"image"
 	"image/color"
 	"image/draw"
@@ -14,9 +14,9 @@ import (
 	"runtime"
 	"sort"
 	"unsafe"
-	// "github.com/runningwild/opengl/gl"
+	// "github.com/MobRulesGames/opengl/gl"
 	gl "github.com/chsc/gogl/gl21"
-	"github.com/runningwild/opengl/glu"
+	"github.com/MobRulesGames/opengl/glu"
 )
 
 type subImage struct {
