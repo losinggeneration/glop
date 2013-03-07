@@ -15,7 +15,7 @@ import (
 	"sort"
 	"unsafe"
 	// "github.com/MobRulesGames/opengl/gl"
-	gl "github.com/chsc/gogl/gl21"
+	gl "github.com/MobRulesGames/gogl/gl21"
 	"github.com/MobRulesGames/opengl/glu"
 )
 
