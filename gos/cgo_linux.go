@@ -1,7 +1,6 @@
 package gos
 
-// #cgo LDFLAGS: -Llinux/lib -lglop -lX11 -lGL
-// #include "linux/include/glop.h"
+// #include "linux/glop.h"
 import "C"
 
 import (
