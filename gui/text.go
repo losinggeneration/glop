@@ -14,6 +14,7 @@ import (
 	"github.com/MobRulesGames/glop/render"
 	"github.com/golang/freetype"
 	"github.com/golang/freetype/truetype"
+	"golang.org/x/image/math/fixed"
 	// "github.com/MobRulesGames/opengl/gl"
 	gl "github.com/MobRulesGames/gogl/gl21"
 	"github.com/MobRulesGames/opengl/glu"
@@ -479,7 +480,7 @@ func MakeDictionary(font *truetype.Font, size int) *Dictionary {
 		context.SetDst(canvas)
 		context.SetClip(canvas.Bounds())
 
-		advance, _ := context.DrawString(string([]rune{r}), raster.Point{})
+		advance, _ := context.DrawString(string([]rune{r}), fixed.Point26_6{})
 		sub := minimalSubImage(canvas)
 		letters = append(letters, sub)
 		rune_mapping[r] = sub

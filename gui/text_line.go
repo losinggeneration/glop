@@ -11,6 +11,7 @@ import (
 	"github.com/MobRulesGames/opengl/gl"
 	"github.com/MobRulesGames/opengl/glu"
 	"github.com/golang/freetype"
+	"github.com/golang/freetype/truetype"
 )
 
 type guiError struct {
@@ -76,7 +77,7 @@ func drawText(font *truetype.Font, c *freetype.Context, color color.Color, rgba 
 	// TODO: wtf - this is all wrong!
 	// fix fonts - we can't change the font size easily
 	height := 1.3
-	pt := freetype.Pt(0, int(float64(c.PointToFix32(*size)>>8)*height))
+	pt := freetype.Pt(0, int(float64(c.PointToFixed(*size)>>8)*height))
 	adv, _ := c.DrawString(text, pt)
 	pt.X += adv.X
 	py := int(float64(pt.Y>>8)/height + 0.01)
@@ -170,7 +171,7 @@ func MakeTextLine(font_name, text string, width int, r, g, b, a float64) *TextLi
 		panic(fmt.Sprintf("Unable to find a font registered as '%s'.", font_name))
 	}
 	w.font = font
-	w.glyph_buf = truetype.NewGlyphBuf()
+	w.glyph_buf = &truetype.GlyphBuf{}
 	w.next_text = text
 	w.context = freetype.NewContext()
 	w.context.SetDPI(132)
