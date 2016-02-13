@@ -1,7 +1,7 @@
 package gos
 
-// #cgo LDFLAGS: -Llinux/lib -lglop -lX11 -lGL
-// #include "linux/include/glop.h"
+// #cgo LDFLAGS: -lX11 -lGL
+// #include "glop_linux.h"
 import "C"
 
 import (
@@ -44,9 +44,8 @@ func (linux *linuxSystemObject) SwapBuffers() {
 	C.GlopSwapBuffers()
 }
 
-func (linux *linuxSystemObject) Think() bool {
+func (linux *linuxSystemObject) Think() {
 	C.GlopThink()
-	return true
 }
 
 // TODO: Make sure that events are given in sorted order (by timestamp)

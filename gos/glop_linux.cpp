@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <cstdio>
 #include <stdio.h>
+#include <unistd.h>
 #include <sys/time.h>
 
 #include <X11/Xlib.h>
@@ -14,7 +15,7 @@ using namespace std;
 
 extern "C" {
 
-#include "glop.h"
+#include "glop_linux.h"
 
 typedef short GlopKey;
 
@@ -582,6 +583,17 @@ void GlopSwapBuffers() {
 
 void GlopEnableVSync(int enable) {
   // TODO: Implement
+}
+
+void GlopClearKeyEvent(GlopKeyEvent* event) {
+  event->index = 0;
+  event->device = 0;
+  event->press_amt = 0;
+  event->timestamp = 0;
+  event->cursor_x = 0;
+  event->cursor_y = 0;
+  event->num_lock = 0;
+  event->caps_lock = 0;
 }
 
 } // extern "C"

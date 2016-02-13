@@ -90,16 +90,8 @@ typedef struct {
   int num_lock;
   int caps_lock;
 } GlopKeyEvent;
-void GlopClearKeyEvent(GlopKeyEvent* event) {
-  event->index = 0;
-  event->device = 0;
-  event->press_amt = 0;
-  event->timestamp = 0;
-  event->cursor_x = 0;
-  event->cursor_y = 0;
-  event->num_lock = 0;
-  event->caps_lock = 0;
-}
+
+void GlopClearKeyEvent(GlopKeyEvent* event);
 
 void GlopInit();
 void* GlopCreateWindow(
