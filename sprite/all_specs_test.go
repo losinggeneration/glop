@@ -1,14 +1,15 @@
 package sprite_test
 
 import (
-  "github.com/orfjackal/gospec/src/gospec"
-  "testing"
+	"testing"
+
+	"github.com/orfjackal/gospec/src/gospec"
 )
 
 func TestAllSpecs(t *testing.T) {
-  r := gospec.NewRunner()
-  r.AddSpec(LoadSpriteSpec)
-  r.AddSpec(CommandNSpec)
-  r.AddSpec(SyncSpec)
-  gospec.MainGoTest(r, t)
+	r := gospec.NewRunner()
+	r.AddSpec(LoadSpriteSpec)
+	r.AddSpec(CommandNSpec)
+	r.AddSpec(SyncSpec)
+	gospec.MainGoTest(r, t)
 }
